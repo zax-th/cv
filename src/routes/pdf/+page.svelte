@@ -172,7 +172,7 @@
     address: t.contact.address,
     phone: "+6692-947-9535", // Keep hardcoded as it doesn't change
     email: "nakarin.weerasak@gmail.com",
-    github: "github.com/zax-th",
+    github: "github.com/9zax",
     gitlab: "gitlab.com/9zax",
     linkedin: "linkedin.com/in/9zax",
     medium: "medium.com/@ctzcz",

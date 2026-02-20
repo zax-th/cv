@@ -235,7 +235,7 @@
     address: "Bueng Kan, Thailand",
     phone: "+6692-947-9535",
     email: "nakarin.weerasak@gmail.com",
-    github: "github.com/zax-th",
+    github: "github.com/9zax",
     linkedin: "linkedin.com/in/9zax",
     medium: "medium.com/@ctzcz",
   };
@@ -892,7 +892,7 @@
               </svg>
             </div>
             <span class="text-slate-400 text-sm mb-2 font-medium">GitHub</span>
-            <span class="text-white font-semibold text-sm">zax-th</span>
+            <span class="text-white font-semibold text-sm">9zax</span>
           </a>
         </div>
 
