@@ -9,6 +9,9 @@ function blank_object() {
 function run_all(fns) {
   fns.forEach(run);
 }
+function is_function(thing) {
+  return typeof thing === "function";
+}
 function safe_not_equal(a, b) {
   return a != a ? b == b : a !== b || a && typeof a === "object" || typeof a === "function";
 }
@@ -119,15 +122,17 @@ function add_attribute(name, value, boolean) {
   return ` ${name}${assignment}`;
 }
 export {
-  setContext as a,
-  subscribe as b,
+  subscribe as a,
+  add_attribute as b,
   create_ssr_component as c,
-  add_attribute as d,
+  each as d,
   escape as e,
-  each as f,
+  safe_not_equal as f,
   getContext as g,
+  is_function as i,
   missing_component as m,
   noop as n,
-  safe_not_equal as s,
+  run_all as r,
+  setContext as s,
   validate_component as v
 };

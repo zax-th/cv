@@ -7,10 +7,10 @@ function __memo(fn) {
 return {
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set([]),
-	mimeTypes: {},
+	assets: new Set(["profile.png"]),
+	mimeTypes: {".png":"image/png"},
 	_: {
-		client: {start:"_app/immutable/entry/start.W-f18V03.js",app:"_app/immutable/entry/app.DMU9_Tca.js",imports:["_app/immutable/entry/start.W-f18V03.js","_app/immutable/chunks/CA-z1gfv.js","_app/immutable/chunks/CZmuBx9L.js","_app/immutable/entry/app.DMU9_Tca.js","_app/immutable/chunks/CZmuBx9L.js","_app/immutable/chunks/COZIsmp9.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.DW73qlzh.js",app:"_app/immutable/entry/app.CtUUhAr-.js",imports:["_app/immutable/entry/start.DW73qlzh.js","_app/immutable/chunks/C46ecr9g.js","_app/immutable/chunks/JSsKUWjE.js","_app/immutable/chunks/Y67qjg9_.js","_app/immutable/entry/app.CtUUhAr-.js","_app/immutable/chunks/JSsKUWjE.js","_app/immutable/chunks/D8tkwMfV.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('./nodes/0.js')),
 			__memo(() => import('./nodes/1.js')),
