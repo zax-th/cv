@@ -13,6 +13,7 @@ const config = {
     paths: {
       base: process.argv.includes("dev") ? "" : "/cv",
     },
+    appDir: "app",
   },
 };
 
