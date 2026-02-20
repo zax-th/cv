@@ -1,4 +1,5 @@
 <script>
+  import { base } from "$app/paths";
   import Logo from "$lib/components/Logo.svelte";
   import { onMount } from "svelte";
   import { t, locale, toggleLocale } from "$lib/stores/i18n.js";
@@ -6,7 +7,11 @@
   let mounted = false;
   let scrollY = 0;
 
-  const profileImages = ["/profile-1.png", "/profile-2.png", "/profile-3.png"];
+  const profileImages = [
+    `${base}/profile-1.png`,
+    `${base}/profile-2.png`,
+    `${base}/profile-3.png`,
+  ];
   let currentImageIndex = 0;
 
   onMount(() => {
