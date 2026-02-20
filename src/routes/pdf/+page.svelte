@@ -230,10 +230,25 @@
           {t.hero.subtitle}
         </p>
       </div>
-      <div class="text-right text-sm text-zinc-600 flex flex-col gap-1">
-        <div>{contact.email}</div>
-        <div>{contact.phone}</div>
-        <div>{contact.address}</div>
+      <div class="flex gap-6 items-center">
+        <div
+          class="text-right text-[10px] text-zinc-600 flex flex-col gap-0.5 font-['Inter']"
+        >
+          <div>{contact.email}</div>
+          <div>{contact.phone}</div>
+          <div>{contact.address}</div>
+        </div>
+        <div class="flex flex-col items-center gap-1">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://9zax.github.io/"
+            alt="Portfolio QR"
+            class="w-16 h-16 border border-zinc-200 p-0.5 rounded"
+          />
+          <span
+            class="text-[8px] text-zinc-400 font-bold uppercase tracking-tighter"
+            >Portfolio</span
+          >
+        </div>
       </div>
     </header>
 
