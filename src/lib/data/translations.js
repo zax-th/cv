@@ -28,12 +28,16 @@ export const translations = {
       role_senior_lead: "Senior Programmer & Technical Lead",
       exp1_company: "ODT",
       exp1_period: "May 2022 - Present",
-      exp1_p1_name: "TTB Project, Retail Lending Team, Common Apply Team",
+      exp1_p1_name:
+        "TTB Project, Retail Lending Team, Common Apply Team, Tep Team",
       exp1_p1_desc:
-        "Development Web Application (Loan, Credit card Feature) with React, Development Native Application (NTB Feature) with IOS Swift, Development Cross Platform (Customer360 feature) with Flutter",
+        "• Retail Lending Team: Developed Web Applications (Loan, Credit Card) with React.\n• Common Apply Team: Developed Native iOS apps (NTB - New To Bank) with Swift.\n• Tep Team: Led the development of a Cross-Platform internal application (Customer 360) using Flutter for TTB Bank's Call Center and Branch employees, implementing complex enterprise features including 360-degree Customer Profiles, Product Holdings (Assets & Liabilities), Touchpoint & Case History, Customer Suitability & Insights, RBAC Permissions, CRM Integration, and Personalized Messaging to enhance customer service capabilities.",
       exp1_p2_name: "a-chieve social enterprise",
       exp1_p2_desc:
-        "Developing a Web Application to Support Career and Life Guidance for Thai Students, Developing a Tool and Report for Career Counselors to Assess Their Students, Developing a Tools and Report support Admin",
+        "Developed comprehensive platforms for the social enterprise, including:\n• Student Web Application: A platform for students and interested users to discover career paths and access guidance tools.\n• 'To School' Web Application: A dedicated portal enabling teachers to monitor, track, and support students under their care.\n• Admin CMS: A Content Management System for administrators to update system details, articles, and platform content.\n• Reporting System: Automated data reporting dashboards tailored for both teachers and administrators.",
+      exp1_p3_name: "KhunaiStory (Personal Project)",
+      exp1_p3_desc:
+        "Developed an English learning application (app.khunaistory.com) through engaging stories. Features include AI-powered role-playing with avatars, interactive story reading, and flashcards for vocabulary practice (Oxford 3000). Built with a focus on immersive user experience and educational technology.",
 
       exp2_company: "Hi-Q Food Products Co., Ltd.",
       exp2_period: "Oct 2019 – May 2022",
@@ -120,12 +124,16 @@ export const translations = {
       role_senior_lead: "ซีเนียร์โปรแกรมเมอร์ & เทคนิคคัลลีด",
       exp1_company: "ODT",
       exp1_period: "พ.ค. 2022 - ปัจจุบัน",
-      exp1_p1_name: "โปรเจกต์ TTB (ทีม Retail Lending, ทีม Common Apply)",
+      exp1_p1_name:
+        "โปรเจกต์ TTB (ทีม Retail Lending, ทีม Common Apply, ทีม Tep)",
       exp1_p1_desc:
-        "พัฒนาเว็บแอปพลิเคชัน (ฟีเจอร์สินเชื่อและบัตรเครดิต) ด้วย React, พัฒนาแอปพลิเคชัน Native (ฟีเจอร์ NTB) ด้วย IOS Swift, พัฒนา Cross Platform (ฟีเจอร์ Customer360) ด้วย Flutter",
+        "• ทีม Retail Lending: พัฒนาเว็บแอปพลิเคชัน (ระบบสินเชื่อและบัตรเครดิต) ด้วย React\n• ทีม Common Apply: พัฒนาแอปพลิเคชัน Native iOS (สำหรับลูกค้า NTB - New To Bank) ด้วย Swift\n• ทีม Tep: นำทีมพัฒนาแอปพลิเคชัน Cross-Platform ภายในองค์กร (Customer 360) ด้วย Flutter สำหรับพนักงาน Call Center และพนักงานหน้าสาขาของธนาคาร TTB โดยอิมพลีเมนต์ฟีเจอร์ระดับ Enterprise ที่ซับซ้อน เช่น โปรไฟล์ลูกค้าแบบ 360 องศา, ข้อมูลผลิตภัณฑ์ที่ถือครอง (สินทรัพย์และหนี้สิน), ประวัติ Touchpoint และ Case, ระบบจัดการสิทธิ์ (RBAC), ข้อมูลเชิงลึกและ Customer Suitability, ระบบข้อความเฉพาะบุคคล (Personalized Message) และการเชื่อมต่อระบบ CRM เพื่อยกระดับประสิทธิภาพการให้บริการลูกค้า",
       exp1_p2_name: "a-chieve (วิสาหกิจเพื่อสังคม)",
       exp1_p2_desc:
-        "พัฒนาเว็บแอปพลิเคชันสนับสนุนแนะแนวอาชีพและการใช้ชีวิตสำหรับนักเรียนไทย, พัฒนาเครื่องมือและรายงานสำหรับครูแนะแนวในการประเมินนักเรียน, พัฒนาเครื่องมือและรายงานสนับสนุนผู้ดูแลระบบ",
+        "พัฒนาระบบแพลตฟอร์มแบบครบวงจร ประกอบด้วย:\n• Web Application สำหรับนักเรียนนักศึกษา: พื้นที่แนะแนวและเครื่องมือค้นหาตัวเองสำหรับผู้ที่สนใจ\n• To School Web Application: แพลตฟอร์มสำหรับครูแนะแนวเพื่อติดตามและดูแลนักเรียนในความดูแล\n• Admin CMS (Content Management System): ระบบจัดการข้อมูลหลังบ้านสำหรับ Admin ในการอัปเดตรายละเอียดระบบและบทความต่างๆ\n• Report System: ระบบรายงานและสรุปผลข้อมูลสำหรับทั้งครูและ Admin",
+      exp1_p3_name: "โปรเจกต์ KhunaiStory (โปรเจกต์ส่วนตัว)",
+      exp1_p3_desc:
+        "พัฒนาแอปพลิเคชันเรียนภาษาอังกฤษ (app.khunaistory.com) ผ่านการอ่านเรื่องราวสนุกๆ มีฟีเจอร์ AI จำลองสถานการณ์ (Role-play) โต้ตอบกับตัวละคร ระบบอ่านเรื่องราวแบบมีเสียงบรรยาย และแฟลชการ์ดสำหรับฝึกฝนคำศัพท์ (Oxford 3000) เน้นการสร้างประสบการณ์ที่เสมือนจริงและนำเทคโนโลยีมาใช้กับการศึกษา",
 
       exp2_company: "Hi-Q Food Products Co., Ltd.",
       exp2_period: "ต.ค. 2019 – พ.ค. 2022",

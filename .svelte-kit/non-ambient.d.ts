@@ -36,6 +36,6 @@ declare module "$app/types" {
 		};
 		Pathname(): "/";
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
-		Asset(): "/profile.png" | string & {};
+		Asset(): "/profile-1.png" | "/profile-2.png" | "/profile-3.png" | string & {};
 	}
 }

@@ -18,6 +18,27 @@
     return () => clearInterval(interval);
   });
 
+  const parseUrl = (text) => {
+    if (!text) return "";
+    const urlRegex =
+      /(https?:\/\/[^\s]+|[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\/[^\s]*)?)/g;
+    return text.replace(urlRegex, (url) => {
+      let href = url;
+      if (!href.startsWith("http://") && !href.startsWith("https://")) {
+        href = "https://" + href;
+      }
+      // Clean up common trailing punctuation from URL parsing
+      const lastChar = href.slice(-1);
+      let trailing = "";
+      if ([".", ",", ")", "]"].includes(lastChar)) {
+        href = href.slice(0, -1);
+        url = url.slice(0, -1);
+        trailing = lastChar;
+      }
+      return `<a href="${href}" target="_blank" rel="noopener noreferrer" class="text-white hover:text-zinc-300 underline underline-offset-2 transition-colors relative z-10">${url}</a>${trailing}`;
+    });
+  };
+
   const experiences = [
     {
       company: "ODT",
@@ -46,6 +67,13 @@
             "Airflow",
             "Superset",
           ],
+        },
+        {
+          name: "KhunaiStory",
+          role: "Full Stack",
+          description:
+            "Developed an English learning application through engaging stories with AI-powered role-playing, interactive story reading, and flashcards.",
+          technologies: ["SvelteKit", "Supabase", "AI (LLM)", "Tailwind CSS"],
         },
       ],
     },
@@ -492,10 +520,12 @@
                             : project.role}
                     </p>
                     <p
-                      class="text-zinc-400 font-light leading-relaxed text-sm mb-5 max-w-2xl"
+                      class="text-zinc-400 font-light leading-relaxed text-sm mb-5 max-w-2xl whitespace-pre-line"
                     >
-                      {$t(`experience.exp${idx + 1}_p${pIdx + 1}_desc`) ||
-                        project.description}
+                      {@html parseUrl(
+                        $t(`experience.exp${idx + 1}_p${pIdx + 1}_desc`) ||
+                          project.description,
+                      )}
                     </p>
 
                     {#if project.keyProjects}
@@ -597,7 +627,6 @@
           </h2>
 
           <div class="relative z-10">
-            <span class="text-6xl mb-6 block drop-shadow-lg">🎓</span>
             <h3
               class="text-3xl md:text-4xl font-['Outfit'] font-extrabold text-white mb-4 leading-tight"
             >

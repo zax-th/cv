@@ -7,10 +7,10 @@
     const { default: Lenis } = await import("@studio-freight/lenis");
 
     const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smooth: true,
-      smoothTouch: false,
+      lerp: 0.08, // Adjust for smoothness (lower is smoother/slower)
+      wheelMultiplier: 1,
+      smoothWheel: true,
+      touchMultiplier: 2,
     });
 
     function raf(time) {

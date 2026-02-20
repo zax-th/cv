@@ -1,4 +1,4 @@
-import { c as create_ssr_component, b as add_attribute, a as subscribe, e as escape, v as validate_component, d as each } from "../../chunks/ssr.js";
+import { c as create_ssr_component, b as add_attribute, a as subscribe, e as escape, d as each, v as validate_component } from "../../chunks/ssr.js";
 import { d as derived, w as writable } from "../../chunks/index.js";
 const css = {
   code: ".logo.svelte-1m6skgg.svelte-1m6skgg{display:inline-block;transition:transform 0.3s ease}.logo.svelte-1m6skgg.svelte-1m6skgg:hover{transform:scale(1.05)}.logo.svelte-1m6skgg:hover circle.svelte-1m6skgg:last-child{animation:pulse 1s ease-in-out infinite}",
@@ -40,10 +40,12 @@ const translations = {
       role_senior_lead: "Senior Programmer & Technical Lead",
       exp1_company: "ODT",
       exp1_period: "May 2022 - Present",
-      exp1_p1_name: "TTB Project, Retail Lending Team, Common Apply Team",
-      exp1_p1_desc: "Development Web Application (Loan, Credit card Feature) with React, Development Native Application (NTB Feature) with IOS Swift, Development Cross Platform (Customer360 feature) with Flutter",
+      exp1_p1_name: "TTB Project, Retail Lending Team, Common Apply Team, Tep Team",
+      exp1_p1_desc: "• Retail Lending Team: Developed Web Applications (Loan, Credit Card) with React.\n• Common Apply Team: Developed Native iOS apps (NTB - New To Bank) with Swift.\n• Tep Team: Led the development of a Cross-Platform internal application (Customer 360) using Flutter for TTB Bank's Call Center and Branch employees, implementing complex enterprise features including 360-degree Customer Profiles, Product Holdings (Assets & Liabilities), Touchpoint & Case History, Customer Suitability & Insights, RBAC Permissions, CRM Integration, and Personalized Messaging to enhance customer service capabilities.",
       exp1_p2_name: "a-chieve social enterprise",
-      exp1_p2_desc: "Developing a Web Application to Support Career and Life Guidance for Thai Students, Developing a Tool and Report for Career Counselors to Assess Their Students, Developing a Tools and Report support Admin",
+      exp1_p2_desc: "Developed comprehensive platforms for the social enterprise, including:\n• Student Web Application: A platform for students and interested users to discover career paths and access guidance tools.\n• 'To School' Web Application: A dedicated portal enabling teachers to monitor, track, and support students under their care.\n• Admin CMS: A Content Management System for administrators to update system details, articles, and platform content.\n• Reporting System: Automated data reporting dashboards tailored for both teachers and administrators.",
+      exp1_p3_name: "KhunaiStory (Personal Project)",
+      exp1_p3_desc: "Developed an English learning application (app.khunaistory.com) through engaging stories. Features include AI-powered role-playing with avatars, interactive story reading, and flashcards for vocabulary practice (Oxford 3000). Built with a focus on immersive user experience and educational technology.",
       exp2_company: "Hi-Q Food Products Co., Ltd.",
       exp2_period: "Oct 2019 – May 2022",
       exp2_p1_name: "Internal and Public Application",
@@ -119,10 +121,12 @@ const translations = {
       role_senior_lead: "ซีเนียร์โปรแกรมเมอร์ & เทคนิคคัลลีด",
       exp1_company: "ODT",
       exp1_period: "พ.ค. 2022 - ปัจจุบัน",
-      exp1_p1_name: "โปรเจกต์ TTB (ทีม Retail Lending, ทีม Common Apply)",
-      exp1_p1_desc: "พัฒนาเว็บแอปพลิเคชัน (ฟีเจอร์สินเชื่อและบัตรเครดิต) ด้วย React, พัฒนาแอปพลิเคชัน Native (ฟีเจอร์ NTB) ด้วย IOS Swift, พัฒนา Cross Platform (ฟีเจอร์ Customer360) ด้วย Flutter",
+      exp1_p1_name: "โปรเจกต์ TTB (ทีม Retail Lending, ทีม Common Apply, ทีม Tep)",
+      exp1_p1_desc: "• ทีม Retail Lending: พัฒนาเว็บแอปพลิเคชัน (ระบบสินเชื่อและบัตรเครดิต) ด้วย React\n• ทีม Common Apply: พัฒนาแอปพลิเคชัน Native iOS (สำหรับลูกค้า NTB - New To Bank) ด้วย Swift\n• ทีม Tep: นำทีมพัฒนาแอปพลิเคชัน Cross-Platform ภายในองค์กร (Customer 360) ด้วย Flutter สำหรับพนักงาน Call Center และพนักงานหน้าสาขาของธนาคาร TTB โดยอิมพลีเมนต์ฟีเจอร์ระดับ Enterprise ที่ซับซ้อน เช่น โปรไฟล์ลูกค้าแบบ 360 องศา, ข้อมูลผลิตภัณฑ์ที่ถือครอง (สินทรัพย์และหนี้สิน), ประวัติ Touchpoint และ Case, ระบบจัดการสิทธิ์ (RBAC), ข้อมูลเชิงลึกและ Customer Suitability, ระบบข้อความเฉพาะบุคคล (Personalized Message) และการเชื่อมต่อระบบ CRM เพื่อยกระดับประสิทธิภาพการให้บริการลูกค้า",
       exp1_p2_name: "a-chieve (วิสาหกิจเพื่อสังคม)",
-      exp1_p2_desc: "พัฒนาเว็บแอปพลิเคชันสนับสนุนแนะแนวอาชีพและการใช้ชีวิตสำหรับนักเรียนไทย, พัฒนาเครื่องมือและรายงานสำหรับครูแนะแนวในการประเมินนักเรียน, พัฒนาเครื่องมือและรายงานสนับสนุนผู้ดูแลระบบ",
+      exp1_p2_desc: "พัฒนาระบบแพลตฟอร์มแบบครบวงจร ประกอบด้วย:\n• Web Application สำหรับนักเรียนนักศึกษา: พื้นที่แนะแนวและเครื่องมือค้นหาตัวเองสำหรับผู้ที่สนใจ\n• To School Web Application: แพลตฟอร์มสำหรับครูแนะแนวเพื่อติดตามและดูแลนักเรียนในความดูแล\n• Admin CMS (Content Management System): ระบบจัดการข้อมูลหลังบ้านสำหรับ Admin ในการอัปเดตรายละเอียดระบบและบทความต่างๆ\n• Report System: ระบบรายงานและสรุปผลข้อมูลสำหรับทั้งครูและ Admin",
+      exp1_p3_name: "โปรเจกต์ KhunaiStory (โปรเจกต์ส่วนตัว)",
+      exp1_p3_desc: "พัฒนาแอปพลิเคชันเรียนภาษาอังกฤษ (app.khunaistory.com) ผ่านการอ่านเรื่องราวสนุกๆ มีฟีเจอร์ AI จำลองสถานการณ์ (Role-play) โต้ตอบกับตัวละคร ระบบอ่านเรื่องราวแบบมีเสียงบรรยาย และแฟลชการ์ดสำหรับฝึกฝนคำศัพท์ (Oxford 3000) เน้นการสร้างประสบการณ์ที่เสมือนจริงและนำเทคโนโลยีมาใช้กับการศึกษา",
       exp2_company: "Hi-Q Food Products Co., Ltd.",
       exp2_period: "ต.ค. 2019 – พ.ค. 2022",
       exp2_p1_name: "แอปพลิเคชันใช้งานภายในและสาธารณะ",
@@ -192,13 +196,124 @@ const t = derived(locale, ($locale) => (key) => {
   return value;
 });
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let experiences;
-  let education;
-  let contact;
-  let $locale, $$unsubscribe_locale;
   let $t, $$unsubscribe_t;
-  $$unsubscribe_locale = subscribe(locale, (value) => $locale = value);
+  let $locale, $$unsubscribe_locale;
   $$unsubscribe_t = subscribe(t, (value) => $t = value);
+  $$unsubscribe_locale = subscribe(locale, (value) => $locale = value);
+  const profileImages = ["/profile-1.png", "/profile-2.png", "/profile-3.png"];
+  let currentImageIndex = 0;
+  const parseUrl = (text) => {
+    if (!text) return "";
+    const urlRegex = /(https?:\/\/[^\s]+|[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\/[^\s]*)?)/g;
+    return text.replace(urlRegex, (url) => {
+      let href = url;
+      if (!href.startsWith("http://") && !href.startsWith("https://")) {
+        href = "https://" + href;
+      }
+      const lastChar = href.slice(-1);
+      let trailing = "";
+      if ([".", ",", ")", "]"].includes(lastChar)) {
+        href = href.slice(0, -1);
+        url = url.slice(0, -1);
+        trailing = lastChar;
+      }
+      return `<a href="${href}" target="_blank" rel="noopener noreferrer" class="text-white hover:text-zinc-300 underline underline-offset-2 transition-colors relative z-10">${url}</a>${trailing}`;
+    });
+  };
+  const experiences = [
+    {
+      company: "ODT",
+      period: "May 2022 - Present",
+      projects: [
+        {
+          name: "TTB Project, Retail Lending Team, Common Apply Team",
+          role: "Frontend",
+          description: "Development Web Application (Loan, Credit card Feature) with React, Development Native Application (NTB Feature) with IOS Swift, Development Cross Platform (Customer360 feature) with Flutter",
+          technologies: ["React", "Swift (IOS)", "Flutter"]
+        },
+        {
+          name: "a-chieve social enterprise",
+          role: "Full Stack",
+          description: "Developing a Web Application to Support Career and Life Guidance for Thai Students, Developing a Tool and Report for Career Counselors to Assess Their Students, Developing a Tools and Report support Admin",
+          technologies: [
+            "Vue",
+            "Nuxt",
+            "Strapi",
+            "Go",
+            "GitLab CI/CD",
+            "Kubernetes",
+            "ArgoCD",
+            "Airflow",
+            "Superset"
+          ]
+        },
+        {
+          name: "KhunaiStory",
+          role: "Full Stack",
+          description: "Developed an English learning application through engaging stories with AI-powered role-playing, interactive story reading, and flashcards.",
+          technologies: ["SvelteKit", "Supabase", "AI (LLM)", "Tailwind CSS"]
+        }
+      ]
+    },
+    {
+      company: "Hi-Q Food Products Co., Ltd.",
+      period: "Oct 2019 – May 2022",
+      projects: [
+        {
+          name: "Internal and Public Application",
+          role: "Senior Programmer & Technical Lead",
+          description: "Team management with Agile and daily meetups with Scrum. Development of authorization systems using sessions, cookies, and JWT. Development of SSR applications using SvelteKit and database with PostgreSQL, Prisma ORM. Implementation of authorization systems using Session Cookie Authentication, JWT Authentication, and Keycloak. On-premises infrastructure setup network configuration. Use Proxmox to Manage Instant of VM. Project deployment management using Docker Nginx. Some Projects Deployment on Kubernetes. Build and deploy automation using Jenkins or GitLab CI. Reverse proxy implementation using Nginx Proxy Manager and Manage DNS with PowerDNS.",
+          technologies: [
+            "SvelteKit",
+            "NestJS",
+            "PostgreSQL",
+            "Prisma",
+            "MongoDB",
+            "MS SQL",
+            "Docker",
+            "Nginx",
+            "Kubernetes",
+            "Jenkins",
+            "GitLab CI",
+            "Keycloak",
+            "Proxmox",
+            "PowerDNS"
+          ],
+          keyProjects: [
+            "Felina Canino Application: Developed by Svelte Frontend Framework use NestJS to Develop Backend, integrating with Navision API and storage data with MongoDB and MS SQL.",
+            "Line Official Account (Point Reward System): Full-stack development using Svelte Implement with Line Liff Framework.",
+            "HR Management Platform: Built an Express backend with MongoDB via Strapi V2.",
+            "Mobile Survey Application: Created a Flutter-based solution with Firebase integration.",
+            "Jobber Application: Optimized backend with Fastify using dual database architecture."
+          ]
+        }
+      ]
+    },
+    {
+      company: "Saraff Infotech Co., Ltd (site AIS)",
+      period: "Jul 2018 - Oct 2019",
+      projects: [
+        {
+          name: "AIS Project",
+          role: "Frontend",
+          description: "Develop web Application run on Kiosk, Develop API service",
+          technologies: ["Angular 6", "Redux", "Bootstrap 4", "HapiJS", "NodeJS"]
+        }
+      ]
+    },
+    {
+      company: "Nextwaver.NET",
+      period: "Jan 2018 - Apr 2018",
+      projects: [
+        {
+          name: "AIS Project",
+          role: "Frontend",
+          description: "Develop web application PHR Profile, Develop Text recognition for Save profile in the book Profile, Develop Deep learning for Training software, Manage Data using .Net Core",
+          technologies: ["PHR", "Python", "C# .Net Core"]
+        }
+      ]
+    }
+  ];
   const skills = {
     frontend: ["Vue", "NuxtJs", "Angular", "React", "Svelte", "Quasar Framework", "Flutter"],
     backend: [
@@ -240,137 +355,40 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       "Keycloak"
     ]
   };
-  experiences = [
-    {
-      company: $t("experience.exp1_company"),
-      period: $t("experience.exp1_period"),
-      projects: [
-        {
-          name: $t("experience.exp1_p1_name"),
-          role: $t("experience.role_frontend"),
-          description: $t("experience.exp1_p1_desc"),
-          technologies: ["React", "Swift (IOS)", "Flutter"]
-        },
-        {
-          name: $t("experience.exp1_p2_name"),
-          role: $t("experience.role_fullstack"),
-          description: $t("experience.exp1_p2_desc"),
-          technologies: [
-            "Vue",
-            "Nuxt",
-            "Strapi",
-            "Go",
-            "GitLab CI/CD",
-            "Kubernetes",
-            "ArgoCD",
-            "Airflow",
-            "Supperset"
-          ]
-        }
-      ]
-    },
-    {
-      company: $t("experience.exp2_company"),
-      period: $t("experience.exp2_period"),
-      projects: [
-        {
-          name: $t("experience.exp2_p1_name"),
-          role: $t("experience.role_senior_lead"),
-          description: $t("experience.exp2_p1_desc"),
-          technologies: [
-            "SvelteKit",
-            "NestJS",
-            "PostgreSQL",
-            "Prisma",
-            "MongoDB",
-            "MS SQL",
-            "Docker",
-            "Nginx",
-            "Kubernetes",
-            "Jenkins",
-            "GitLab CI",
-            "Keycloak",
-            "Proxmox",
-            "PowerDNS"
-          ],
-          keyProjects: [
-            $t("experience.exp2_kp1"),
-            $t("experience.exp2_kp2"),
-            $t("experience.exp2_kp3"),
-            $t("experience.exp2_kp4"),
-            $t("experience.exp2_kp5")
-          ]
-        }
-      ]
-    },
-    {
-      company: $t("experience.exp3_company"),
-      period: $t("experience.exp3_period"),
-      projects: [
-        {
-          name: $t("experience.exp3_p1_name"),
-          role: $t("experience.role_frontend"),
-          description: $t("experience.exp3_p1_desc"),
-          technologies: ["Angular 6", "Redux", "Bootstrap 4", "HapiJS", "NodeJS"]
-        }
-      ]
-    },
-    {
-      company: $t("experience.exp4_company"),
-      period: $t("experience.exp4_period"),
-      projects: [
-        {
-          name: $t("experience.exp4_p1_name"),
-          role: $t("experience.role_frontend"),
-          description: $t("experience.exp4_p1_desc"),
-          technologies: ["PHR", "Python", "C# .Net Core"]
-        }
-      ]
-    }
-  ];
-  education = {
-    degree: $t("education.degree"),
-    university: $t("education.university")
+  const contact = {
+    phone: "+6692-947-9535",
+    email: "nakarin.weerasak@gmail.com"
   };
-  contact = {
-    address: $t("contact.address"),
-    phone: $t("contact.phone"),
-    email: "nakarin.weerasak@gmail.com",
-    birthday: $t("contact.birthdayDate"),
-    nationality: $locale === "th" ? "สัญชาติไทย" : "Thai"
-  };
-  $$unsubscribe_locale();
   $$unsubscribe_t();
-  return `${$$result.head += `<!-- HEAD_svelte-1uzvyg4_START -->${$$result.title = `<title>Nakarin Weerasak | ${escape($t("hero.subtitle"))}</title>`, ""}<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"><!-- HEAD_svelte-1uzvyg4_END -->`, ""} <main class="${"min-h-screen " + escape($locale === "th" ? "font-[Kanit]" : "font-[Inter]", true)}"> <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-700"><div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"><a href="/" class="flex items-center gap-2 no-underline">${validate_component(Logo, "Logo").$$render($$result, { size: 50 }, {}, {})} <span class="text-2xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent" data-svelte-h="svelte-18ryrj1">NW</span></a> <div class="flex items-center gap-6"><nav class="hidden md:flex gap-8"><a href="#about" class="text-slate-400 hover:text-white font-medium transition-colors relative">${escape($t("nav.about"))}</a> <a href="#experience" class="text-slate-400 hover:text-white font-medium transition-colors relative">${escape($t("nav.experience"))}</a> <a href="#skills" class="text-slate-400 hover:text-white font-medium transition-colors relative">${escape($t("nav.skills"))}</a> <a href="#education" class="text-slate-400 hover:text-white font-medium transition-colors relative">${escape($t("nav.education"))}</a> <a href="#contact" class="text-slate-400 hover:text-white font-medium transition-colors relative">${escape($t("nav.contact"))}</a></nav> <button class="px-4 py-2 rounded-full border border-slate-600 bg-slate-800 text-slate-300 hover:text-white hover:border-blue-500 hover:bg-slate-700 transition-all font-semibold text-sm cursor-pointer shadow-sm">${escape($locale === "en" ? "🇹🇭 TH" : "🇬🇧 EN")}</button></div></div></header>  <section class="min-h-screen flex items-center pt-20 relative overflow-hidden"><div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-cyan-900/20"></div> <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center relative z-10"><div class="${escape(
+  $$unsubscribe_locale();
+  return ` ${$$result.head += `<!-- HEAD_svelte-peywps_START -->${$$result.title = `<title>Nakarin Weerasak | Software Engineer</title>`, ""}<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"><!-- HEAD_svelte-peywps_END -->`, ""} <main class="min-h-screen bg-[#000000] text-[#A1A1AA] font-['Inter'] selection:bg-zinc-800/50 selection:text-white overflow-x-hidden relative"> <div class="fixed inset-0 z-0 pointer-events-none" style="background-image: radial-gradient(rgba(255, 255, 255, 0-[0].1) 1px, transparent 1px); background-size: 32px 32px; opacity: 0.3;"></div>  <div class="fixed top-[-20%] left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-white opacity-[0.02] blur-[150px] pointer-events-none z-0 rounded-full"></div> <div class="relative z-10"> <header class="${"fixed top-0 left-0 right-0 z-50 bg-[#000000]/80 backdrop-blur-md transition-all " + escape(
+    "py-6",
+    true
+  )}"><div class="max-w-6xl mx-auto px-6 flex justify-between items-center"><a href="/" class="text-xl font-['Outfit'] font-semibold text-white tracking-tight no-underline hover:opacity-80 transition-opacity" data-svelte-h="svelte-omk2da">Nakarin.</a> <nav class="hidden md:flex gap-8 items-center"><a href="#about" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">${escape($t("nav.about"))}</a> <a href="#experience" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">${escape($t("nav.experience"))}</a> <a href="#skills" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">${escape($t("nav.skills"))}</a> <a href="#contact" class="text-sm font-medium text-zinc-400 hover:text-white transition-colors">${escape($t("nav.contact"))}</a>  <button class="ml-4 px-3 py-1.5 rounded-full border border-zinc-800 bg-[#0A101D] text-xs font-semibold text-zinc-300 hover:text-white hover:border-zinc-600 transition-all flex items-center gap-2 group"><span${add_attribute("class", $locale === "en" ? "text-white" : "text-zinc-500", 0)}>EN</span> <span class="text-zinc-700" data-svelte-h="svelte-1ye3l6u">/</span> <span${add_attribute("class", $locale === "th" ? "text-white" : "text-zinc-500", 0)}>TH</span></button></nav></div></header>  <section class="min-h-screen flex flex-col justify-center pt-32 pb-12 px-6 max-w-6xl mx-auto relative"><div class="grid lg:grid-cols-12 gap-12 items-center"> <div class="${"lg:col-span-7 " + escape(
+    "opacity-0 translate-y-4",
+    true
+  ) + " transition-all duration-1000 ease-out z-10"}"><div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-zinc-800/80 bg-zinc-900/30 mb-8 backdrop-blur-sm" data-svelte-h="svelte-fyrytz"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span> <span class="text-xs font-medium text-zinc-300">Open to new opportunities</span></div> <h1 class="text-5xl md:text-7xl lg:text-[5.5rem] font-['Outfit'] font-semibold leading-[1.1] text-white tracking-tight mb-6">Software Engineer <br> <span class="text-zinc-500">${escape($t("hero.subtitle"))}</span></h1> <p class="text-lg text-zinc-400 mb-10 max-w-xl font-light leading-relaxed">${escape($t("about.p1"))}</p> <div class="flex items-center gap-5"><a href="#experience" class="px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-zinc-200 transition-colors text-sm">${escape($t("hero.viewWork"))}</a> <a href="#contact" class="px-6 py-3 border border-zinc-800 text-white font-semibold rounded-lg hover:bg-zinc-900 transition-colors text-sm">${escape($t("hero.getInTouch"))}</a></div></div>  <div class="${"lg:col-span-5 " + escape(
     "opacity-0 translate-y-8",
     true
-  ) + " transition-all duration-700"}"><h1 class="text-5xl md:text-6xl font-bold mb-4" data-svelte-h="svelte-1d7gs7h"><span class="bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent">Nakarin Weerasak</span></h1> <p class="text-xl text-slate-400 mb-8">${escape($t("hero.subtitle"))}</p> <div class="flex gap-4"><a href="#contact" class="px-8 py-3.5 bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all">${escape($t("hero.getInTouch"))}</a> <a href="#experience" class="px-8 py-3.5 border-2 border-slate-600 text-white font-semibold rounded-full hover:border-blue-500 hover:bg-blue-500/10 transition-all">${escape($t("hero.viewWork"))}</a></div></div> <div class="${escape("opacity-0 scale-90", true) + " transition-all duration-700 delay-200 flex justify-center"}">${validate_component(Logo, "Logo").$$render($$result, { size: 200 }, {}, {})}</div></div> <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500 text-sm"><span>${escape($t("hero.scrollDown"))}</span> <div class="w-5 h-8 border-2 border-slate-500 rounded-full relative" data-svelte-h="svelte-zw6tpp"><div class="absolute top-2 left-1/2 -translate-x-1/2 w-1 h-2 bg-blue-500 rounded-full animate-pulse"></div></div></div></section>  <section id="about" class="py-24"><div class="max-w-6xl mx-auto px-6"><h2 class="text-4xl font-bold mb-12 relative inline-block">${escape($t("about.title"))} <span class="absolute -bottom-3 left-0 w-16 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 rounded-full"></span></h2> <div class="space-y-8"><div class="bg-slate-800 rounded-2xl p-8 border border-slate-700"><p class="text-slate-300 text-lg mb-4">${escape($t("about.p1"))}</p> <p class="text-slate-300 text-lg">${escape($t("about.p2"))}</p></div> <div class="grid grid-cols-1 md:grid-cols-3 gap-6"><div class="bg-slate-800 rounded-2xl p-8 text-center border border-slate-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-1"><span class="block text-5xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent" data-svelte-h="svelte-1fy3urh">8+</span> <span class="text-slate-500 text-sm">${escape($t("about.yearsExp"))}</span></div> <div class="bg-slate-800 rounded-2xl p-8 text-center border border-slate-700 hover:border-purple-500 hover:shadow-lg hover:shadow-purple-500/20 transition-all hover:-translate-y-1"><span class="block text-5xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent" data-svelte-h="svelte-m85nfd">15+</span> <span class="text-slate-500 text-sm">${escape($t("about.projectsCompleted"))}</span></div> <div class="bg-slate-800 rounded-2xl p-8 text-center border border-slate-700 hover:border-cyan-500 hover:shadow-lg hover:shadow-cyan-500/20 transition-all hover:-translate-y-1"><span class="block text-5xl font-extrabold bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent" data-svelte-h="svelte-16l0jf5">20+</span> <span class="text-slate-500 text-sm">${escape($t("about.technologies"))}</span></div></div></div></div></section>  <section id="experience" class="py-24 bg-slate-800/50"><div class="max-w-6xl mx-auto px-6"><h2 class="text-4xl font-bold mb-12 relative inline-block">${escape($t("experience.title"))} <span class="absolute -bottom-3 left-0 w-16 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 rounded-full"></span></h2> <div class="space-y-8 pl-8 border-l-2 border-gradient-to-b from-blue-500 via-purple-500 to-cyan-500">${each(experiences, (exp, i) => {
-    return `<div class="${"relative " + escape(
-      "opacity-0 translate-x-8",
+  ) + " transition-all duration-1000 delay-300 ease-out"}"><div class="relative w-full aspect-square md:aspect-4/3 lg:aspect-square rounded-3xl border border-zinc-800/80 bg-zinc-900/20 group"><div class="absolute inset-1.5 bg-[#0A101D] rounded-[2.8rem] z-0 overflow-hidden">${each(profileImages, (src, i) => {
+    return `<img${add_attribute("src", src, 0)} alt="Nakarin Weerasak" class="${"absolute inset-0 w-full h-full object-cover grayscale-30 group-hover:grayscale-0 transition-opacity duration-1000 " + escape(
+      i === currentImageIndex ? "opacity-100 scale-100 z-10" : "opacity-0 scale-105 z-0",
       true
-    ) + " transition-all duration-500"}" style="${"transition-delay: " + escape(i * 150, true) + "ms"}"><div class="absolute -left-10 top-0 w-4 h-4 bg-blue-500 rounded-full border-4 border-slate-900 shadow-lg shadow-blue-500/50"></div> <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700"><div class="flex flex-wrap justify-between items-start gap-4 mb-6"><h3 class="text-2xl font-bold text-white">${escape(exp.company)}</h3> <span class="text-blue-400 font-semibold">${escape(exp.period)}</span></div> ${each(exp.projects, (project) => {
-      return `<div class="bg-slate-900/50 rounded-xl p-6 mb-4 border border-slate-700 last:mb-0"><h4 class="text-lg font-semibold text-white mb-2">${escape(project.name)}</h4> <span class="inline-block bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 text-white px-3 py-1 rounded-full text-xs font-semibold mb-4">${escape(project.role)}</span> <p class="text-slate-400 mb-4 text-sm">${escape(project.description)}</p> ${project.keyProjects ? `<ul class="space-y-2 mb-4">${each(project.keyProjects, (keyProject) => {
-        return `<li class="text-slate-400 text-sm flex items-start gap-2"><span class="text-cyan-400 mt-1" data-svelte-h="svelte-nt68rs">▸</span> ${escape(keyProject)} </li>`;
+    )}">`;
+  })}</div>  <div class="absolute -top-4 -left-4 z-20 bg-[#0A101D] border border-zinc-800 rounded-2xl w-14 h-14 flex items-center justify-center shadow-xl backdrop-blur-md transform -rotate-12 group-hover:-rotate-6 transition-all duration-300" data-svelte-h="svelte-15mlfse"><svg class="w-7 h-7 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg></div> <div class="absolute -bottom-4 -right-2 z-20 bg-[#0A101D] border border-zinc-800 rounded-2xl w-14 h-14 flex items-center justify-center shadow-xl backdrop-blur-md transform rotate-12 group-hover:rotate-6 transition-all duration-300" data-svelte-h="svelte-g0ceoc"><svg class="w-7 h-7 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div> <div class="absolute top-1/2 -right-6 z-20 bg-[#0A101D] border border-zinc-800 rounded-2xl w-14 h-14 flex items-center justify-center shadow-xl backdrop-blur-md transform rotate-6 group-hover:translate-x-2 transition-all duration-300 md:flex" data-svelte-h="svelte-fxmff0"><svg class="w-7 h-7 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path></svg></div></div></div></div></section>  <section id="about" class="py-24 px-6 max-w-6xl mx-auto"><div class="grid grid-cols-1 md:grid-cols-3 gap-4"> <div class="md:col-span-2 rounded-3xl border border-zinc-800/80 bg-zinc-900/30 p-8 md:p-12 hover:border-zinc-700 transition-colors group"><h2 class="text-2xl font-['Outfit'] font-semibold text-white mb-6">${escape($t("about.title"))}</h2> <p class="text-zinc-400 text-lg leading-relaxed font-light mb-6 group-hover:text-zinc-300 transition-colors">${escape($t("about.p1"))}</p> <p class="text-zinc-400 text-lg leading-relaxed font-light group-hover:text-zinc-300 transition-colors">${escape($t("about.p2"))}</p></div>  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mt-auto"><div class="bg-zinc-900/40 rounded-3xl p-6 border border-zinc-800/80 hover:bg-zinc-800/80 hover:border-slate-500/30 transition-all flex flex-col justify-center items-center h-full"><span class="block text-4xl font-['Outfit'] font-extrabold text-white mb-1" data-svelte-h="svelte-77kd8v">8+</span> <span class="text-zinc-500 font-medium text-sm tracking-wide uppercase">${escape($t("about.yearsExp"))}</span></div> <div class="bg-zinc-900/40 rounded-3xl p-6 border border-zinc-800/80 hover:bg-zinc-800/80 hover:border-slate-500/30 transition-all flex flex-col justify-center items-center h-full"><span class="block text-4xl font-['Outfit'] font-extrabold text-white mb-1" data-svelte-h="svelte-yzas8j">15+</span> <span class="text-zinc-500 font-medium text-sm tracking-wide uppercase">${escape($t("about.projectsCompleted"))}</span></div></div></div></section>  <section id="experience" class="py-24 px-6 max-w-6xl mx-auto border-t border-zinc-900"><div class="flex flex-col md:flex-row gap-12 md:gap-24"> <div class="w-full md:w-1/4"><h2 class="text-sm font-semibold text-zinc-500 uppercase tracking-widest sticky top-32">${escape($t("experience.title"))}</h2></div> <div class="w-full md:w-3/4 space-y-16">${each(experiences, (exp, idx) => {
+    return `<div class="group relative"><div class="flex flex-col md:flex-row md:items-baseline justify-between mb-4 gap-2"><h3 class="text-2xl font-['Outfit'] font-semibold text-white">${escape($t(`experience.exp${idx + 1}_company`) || exp.company)}</h3> <span class="text-zinc-500 font-mono text-sm">${escape($t(`experience.exp${idx + 1}_period`) || exp.period)}</span></div> <div class="space-y-10">${each(exp.projects, (project, pIdx) => {
+      return `<div><h4 class="text-lg font-medium text-zinc-200 mb-1">${escape($t(`experience.exp${idx + 1}_p${pIdx + 1}_name`) || project.name)}</h4> <p class="text-sm text-zinc-500 mb-4">${escape(project.role === "Frontend" ? $t("experience.role_frontend") : project.role === "Full Stack" ? $t("experience.role_fullstack") : project.role === "Senior Programmer & Technical Lead" ? $t("experience.role_senior_lead") : project.role)}</p> <p class="text-zinc-400 font-light leading-relaxed text-sm mb-5 max-w-2xl whitespace-pre-line"><!-- HTML_TAG_START -->${parseUrl($t(`experience.exp${idx + 1}_p${pIdx + 1}_desc`) || project.description)}<!-- HTML_TAG_END --></p> ${project.keyProjects ? `<ul class="space-y-3 mb-6">${each(project.keyProjects, (keyProject, kpIdx) => {
+        return `<li class="text-zinc-400 text-sm font-light flex items-start leading-relaxed"><span class="text-zinc-700 mr-3 mt-1" data-svelte-h="svelte-1qk3wrq">-</span> <span>${escape($t(`experience.exp${idx + 1}_kp${kpIdx + 1}`) || keyProject)}</span> </li>`;
       })} </ul>` : ``} <div class="flex flex-wrap gap-2">${each(project.technologies, (tech) => {
-        return `<span class="bg-blue-500/10 text-blue-400 px-3 py-1.5 rounded-full text-xs font-medium border border-blue-500/20">${escape(tech)}</span>`;
+        return `<span class="px-2.5 py-1 rounded bg-zinc-900 border border-zinc-800 text-zinc-400 text-[11px] font-mono tracking-wide">${escape(tech)}</span>`;
       })}</div> </div>`;
     })}</div> </div>`;
-  })}</div></div></section>  <section id="skills" class="py-24"><div class="max-w-6xl mx-auto px-6"><h2 class="text-4xl font-bold mb-12 relative inline-block">${escape($t("skills.title"))} <span class="absolute -bottom-3 left-0 w-16 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 rounded-full"></span></h2> <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"><div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-purple-500 hover:-translate-y-1 transition-all"><h3 class="text-lg font-semibold mb-4 flex items-center gap-2"><span class="text-2xl" data-svelte-h="svelte-1md6vkd">🎨</span> ${escape($t("skills.frontend"))}</h3> <div class="flex flex-wrap gap-2">${each(skills.frontend, (skill) => {
-    return `<span class="bg-purple-500/10 text-purple-400 px-3 py-1.5 rounded-full text-sm font-medium border border-purple-500/20 hover:bg-purple-500/20 transition-all">${escape(skill)}</span>`;
-  })}</div></div> <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-blue-500 hover:-translate-y-1 transition-all"><h3 class="text-lg font-semibold mb-4 flex items-center gap-2"><span class="text-2xl" data-svelte-h="svelte-ilodbd">⚙️</span> ${escape($t("skills.backend"))}</h3> <div class="flex flex-wrap gap-2">${each(skills.backend, (skill) => {
-    return `<span class="bg-blue-500/10 text-blue-400 px-3 py-1.5 rounded-full text-sm font-medium border border-blue-500/20 hover:bg-blue-500/20 transition-all">${escape(skill)}</span>`;
-  })}</div></div> <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-green-500 hover:-translate-y-1 transition-all"><h3 class="text-lg font-semibold mb-4 flex items-center gap-2"><span class="text-2xl" data-svelte-h="svelte-2073lz">🗄️</span> ${escape($t("skills.database"))}</h3> <div class="flex flex-wrap gap-2">${each(skills.database, (skill) => {
-    return `<span class="bg-green-500/10 text-green-400 px-3 py-1.5 rounded-full text-sm font-medium border border-green-500/20 hover:bg-green-500/20 transition-all">${escape(skill)}</span>`;
-  })}</div></div> <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-orange-500 hover:-translate-y-1 transition-all"><h3 class="text-lg font-semibold mb-4 flex items-center gap-2"><span class="text-2xl" data-svelte-h="svelte-18zkvsj">📱</span> ${escape($t("skills.mobile"))}</h3> <div class="flex flex-wrap gap-2">${each(skills.mobile, (skill) => {
-    return `<span class="bg-orange-500/10 text-orange-400 px-3 py-1.5 rounded-full text-sm font-medium border border-orange-500/20 hover:bg-orange-500/20 transition-all">${escape(skill)}</span>`;
-  })}</div></div> <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-cyan-500 hover:-translate-y-1 transition-all"><h3 class="text-lg font-semibold mb-4 flex items-center gap-2"><span class="text-2xl" data-svelte-h="svelte-6trpby">🚀</span> ${escape($t("skills.devops"))}</h3> <div class="flex flex-wrap gap-2">${each(skills.devops, (skill) => {
-    return `<span class="bg-cyan-500/10 text-cyan-400 px-3 py-1.5 rounded-full text-sm font-medium border border-cyan-500/20 hover:bg-cyan-500/20 transition-all">${escape(skill)}</span>`;
-  })}</div></div> <div class="bg-slate-800 rounded-2xl p-6 border border-slate-700 hover:border-pink-500 hover:-translate-y-1 transition-all"><h3 class="text-lg font-semibold mb-4 flex items-center gap-2"><span class="text-2xl" data-svelte-h="svelte-wzkfh1">🔧</span> ${escape($t("skills.other"))}</h3> <div class="flex flex-wrap gap-2">${each(skills.other, (skill) => {
-    return `<span class="bg-pink-500/10 text-pink-400 px-3 py-1.5 rounded-full text-sm font-medium border border-pink-500/20 hover:bg-pink-500/20 transition-all">${escape(skill)}</span>`;
-  })}</div></div></div></div></section>  <section id="education" class="py-24 bg-slate-800/50"><div class="max-w-6xl mx-auto px-6"><h2 class="text-4xl font-bold mb-12 relative inline-block">${escape($t("education.title"))} <span class="absolute -bottom-3 left-0 w-16 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 rounded-full"></span></h2> <div class="${"bg-slate-800 rounded-2xl p-10 border border-slate-700 max-w-2xl " + escape(
-    "opacity-0 translate-y-8",
-    true
-  ) + " transition-all duration-500"}"><div class="flex items-center gap-8"><span class="text-6xl" data-svelte-h="svelte-1vyxqfi">🎓</span> <div><h3 class="text-2xl font-bold text-white mb-2">${escape(education.degree)}</h3> <p class="text-slate-400">${escape(education.university)}</p></div></div></div></div></section>  <section id="contact" class="py-24"><div class="max-w-6xl mx-auto px-6"><h2 class="text-4xl font-bold mb-12 relative inline-block">${escape($t("contact.title"))} <span class="absolute -bottom-3 left-0 w-16 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 rounded-full"></span></h2> <div class="grid md:grid-cols-2 gap-6"><a href="${"mailto:" + escape(contact.email, true)}" class="bg-slate-800 rounded-2xl p-8 border border-slate-700 flex flex-col items-center text-center hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 hover:-translate-y-1 transition-all no-underline"><span class="text-4xl mb-4" data-svelte-h="svelte-1xuc7ll">✉️</span> <span class="text-slate-500 text-sm mb-2">${escape($t("contact.email"))}</span> <span class="text-white font-medium">${escape(contact.email)}</span></a> <a href="${"tel:" + escape(contact.phone, true)}" class="bg-slate-800 rounded-2xl p-8 border border-slate-700 flex flex-col items-center text-center hover:border-green-500 hover:shadow-lg hover:shadow-green-500/20 hover:-translate-y-1 transition-all no-underline"><span class="text-4xl mb-4" data-svelte-h="svelte-11j3kx3">📱</span> <span class="text-slate-500 text-sm mb-2">${escape($t("contact.phone"))}</span> <span class="text-white font-medium">${escape(contact.phone)}</span></a> <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 flex flex-col items-center text-center"><span class="text-4xl mb-4" data-svelte-h="svelte-1n4d6bf">📍</span> <span class="text-slate-500 text-sm mb-2">${escape($t("contact.location"))}</span> <span class="text-white font-medium">${escape(contact.address)}</span></div> <div class="bg-slate-800 rounded-2xl p-8 border border-slate-700 flex flex-col items-center text-center"><span class="text-4xl mb-4" data-svelte-h="svelte-16o58hj">🎂</span> <span class="text-slate-500 text-sm mb-2">${escape($t("contact.birthday"))}</span> <span class="text-white font-medium">${escape(contact.birthday)}</span></div></div></div></section>  <footer class="bg-slate-800 border-t border-slate-700 py-8"><div class="max-w-6xl mx-auto px-6"><div class="flex flex-col items-center gap-4">${validate_component(Logo, "Logo").$$render($$result, { size: 40 }, {}, {})} <p class="text-slate-400">${escape($t("footer.rights"))}</p> <div class="flex items-center gap-4 text-slate-500"><a href="${"mailto:" + escape(contact.email, true)}" class="hover:text-white transition-colors">${escape($t("contact.email"))}</a> <span data-svelte-h="svelte-1e2i4m">|</span> <span>${escape($t("footer.role"))}</span></div></div></div></footer></main>`;
+  })}</div></div></section>  <section id="skills" class="py-24 px-6 max-w-6xl mx-auto border-t border-zinc-900"><div class="flex flex-col md:flex-row gap-12 md:gap-24 mb-12"><div class="w-full md:w-1/4"><h2 class="text-sm font-semibold text-zinc-500 uppercase tracking-widest sticky top-32">${escape($t("skills.title"))}</h2></div> <div class="w-full md:w-3/4" data-svelte-h="svelte-zlfmpv"><p class="text-xl text-zinc-400 font-light max-w-2xl leading-relaxed">A comprehensive, adaptable toolset optimized for building end-to-end
+            full-stack architectures.</p></div></div> <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">${each(Object.entries(skills), ([category, items]) => {
+    return `<div class="rounded-2xl border border-zinc-800/80 bg-zinc-900/20 p-8 hover:bg-zinc-900/40 transition-colors"><h3 class="text-lg font-['Outfit'] font-semibold mb-6 text-white capitalize">${escape($t("skills." + category) || category)}</h3> <ul class="space-y-3">${each(items, (skill) => {
+      return `<li class="text-zinc-400 font-light text-sm flex items-center group cursor-default"><span class="w-1.5 h-1.5 rounded-full bg-zinc-800 mr-3 group-hover:bg-white transition-colors"></span> ${escape(skill)} </li>`;
+    })}</ul> </div>`;
+  })}</div></section>  <section id="education" class="py-24 px-6 relative"><div class="max-w-3xl mx-auto"><div class="bg-linear-to-br from-blue-900/40 via-purple-900/20 to-slate-900/40 backdrop-blur-2xl rounded-[3rem] p-10 md:p-14 border border-white/10 text-center relative overflow-hidden group"> <div class="absolute top-0 right-0 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl group-hover:bg-purple-500/20 transition-all duration-700"></div> <h2 class="text-2xl font-['Outfit'] font-bold text-blue-400 mb-8 uppercase tracking-widest text-sm">${escape($t("education.title"))}</h2> <div class="relative z-10"><span class="text-6xl mb-6 block drop-shadow-lg" data-svelte-h="svelte-gxmo79">🎓</span> <h3 class="text-3xl md:text-4xl font-['Outfit'] font-extrabold text-white mb-4 leading-tight">${escape($t("education.degree"))}</h3> <p class="text-xl text-slate-400">${escape($t("education.university"))}</p></div></div></div></section>  <section id="contact" class="pt-24 pb-12 px-6"><div class="max-w-5xl mx-auto"><h2 class="text-4xl md:text-5xl font-['Outfit'] font-bold mb-16 text-center text-white relative">${escape($t("contact.title"))} <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-12 h-1.5 bg-linear-to-r from-blue-500 to-purple-500 rounded-full"></div></h2> <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-24"><a href="${"mailto:" + escape(contact.email, true)}" class="bg-zinc-900/30 backdrop-blur-xl rounded-4xl p-8 border border-zinc-800/80 flex flex-col items-center text-center hover:bg-zinc-800/50 hover:border-slate-500/30 hover:-translate-y-2 transition-all group no-underline"><div class="w-14 h-14 rounded-full bg-slate-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform" data-svelte-h="svelte-yb8os"><svg class="w-6 h-6 text-slate-300 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg></div> <span class="text-slate-400 text-sm mb-2 font-medium">${escape($t("contact.email"))}</span> <span class="text-white font-semibold text-sm break-all">${escape(contact.email)}</span></a> <a href="${"tel:" + escape(contact.phone, true)}" class="bg-zinc-900/30 backdrop-blur-xl rounded-4xl p-8 border border-zinc-800/80 flex flex-col items-center text-center hover:bg-zinc-800/50 hover:border-slate-500/30 hover:-translate-y-2 transition-all group no-underline"><div class="w-14 h-14 rounded-full bg-slate-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform" data-svelte-h="svelte-vzriki"><svg class="w-6 h-6 text-slate-300 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg></div> <span class="text-slate-400 text-sm mb-2 font-medium">${escape($t("contact.phone"))}</span> <span class="text-white font-semibold">${escape(contact.phone)}</span></a> <div class="bg-zinc-900/30 backdrop-blur-xl rounded-4xl p-8 border border-zinc-800/80 flex flex-col items-center text-center hover:bg-zinc-800/50 transition-all group"><div class="w-14 h-14 rounded-full bg-slate-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform" data-svelte-h="svelte-1pa20of"><svg class="w-6 h-6 text-slate-300 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg></div> <span class="text-slate-400 text-sm mb-2 font-medium">${escape($t("contact.location"))}</span> <span class="text-white font-semibold text-sm">${escape($t("contact.address"))}</span></div> <div class="bg-zinc-900/30 backdrop-blur-xl rounded-4xl p-8 border border-zinc-800/80 flex flex-col items-center text-center hover:bg-zinc-800/50 transition-all group" data-svelte-h="svelte-12wyd5l"><div class="w-14 h-14 rounded-full bg-slate-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform"><svg class="w-6 h-6 text-slate-300 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg></div> <span class="text-slate-400 text-sm mb-2 font-medium">Status</span> <span class="text-white font-semibold text-sm">Available</span></div></div>  <footer class="border-t border-zinc-800/80 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-mono text-zinc-600"><div class="flex items-center gap-2 opacity-50 hover:opacity-100 transition-opacity">${validate_component(Logo, "Logo").$$render($$result, { size: 24 }, {}, {})} <span class="text-sm font-semibold text-white tracking-widest" data-svelte-h="svelte-1oiv7rm">NAKARIN W.</span></div> <p class="font-medium inline-block flex gap-1">${escape($t("footer.rights"))} <span class="hidden md:inline" data-svelte-h="svelte-xlq7l0">Built with SvelteKit.</span></p></footer></div></section></div></main>`;
 });
 export {
   Page as default
