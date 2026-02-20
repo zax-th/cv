@@ -38,6 +38,12 @@ export const translations = {
       exp1_p3_name: "KhunaiStory (Personal Project)",
       exp1_p3_desc:
         "Developed an English learning application (app.khunaistory.com) through engaging stories. Features include AI-powered role-playing with avatars, interactive story reading, and flashcards for vocabulary practice (Oxford 3000). Built with a focus on immersive user experience and educational technology.",
+      exp1_p4_name: "Storage and Cookies Manager (Chrome Extension)",
+      exp1_p4_desc:
+        "Developed and published a popular open-source Google Chrome Extension (https://chromewebstore.google.com/detail/storage-and-cookies-manag/oohieppjjpdgidfhdlcjfpfmhkpflbcc) designed for web developers. Currently serving 1,000+ active users. Features include viewing, editing, adding, and deleting Cookies, LocalStorage, and SessionStorage in real-time. Built with Svelte and HTML/CSS, focusing on a clean, intuitive UI and strict adherence to Chrome's Manifest V3 security policies.",
+      exp1_p5_name: "PCW Cleaning Assessment (Free WebApp)",
+      exp1_p5_desc:
+        "Developed a free web application (https://cleaning.pcw.ac.th/) for PCW school. The platform enables student committees to perform daily classroom cleanliness assessments and record scores. It features a comprehensive reporting system that allows homeroom teachers, students, and staff to monitor and review the cleanliness evaluations.",
 
       exp2_company: "Hi-Q Food Products Co., Ltd.",
       exp2_period: "Oct 2019 – May 2022",
@@ -57,8 +63,9 @@ export const translations = {
 
       exp3_company: "Saraff Infotech Co., Ltd (site AIS)",
       exp3_period: "Jul 2018 - Oct 2019",
-      exp3_p1_name: "AIS Project",
-      exp3_p1_desc: "Develop web Application run on Kiosk, Develop API service",
+      exp3_p1_name: "AIS Kiosk & E-Service Web Application",
+      exp3_p1_desc:
+        "Developed comprehensive self-service Web Applications deployed on interactive Kiosks across AIS (https://www.ais.th/) branches nationwide. Spearheaded the frontend development for core telecommunication services including the 'New Device Purchase' flow (integrating with inventory and payment gateways), the 'Mobile Number Portability' (Switch to AIS) journey, and extensive account management systems for both Prepaid and Postpaid customers. Built secure, high-performance API services to bridge the frontend with core legacy backend systems, ensuring a seamless omnichannel customer experience.",
 
       exp4_company: "Nextwaver.NET",
       exp4_period: "Jan 2018 - Apr 2018",
@@ -68,6 +75,7 @@ export const translations = {
     },
     skills: {
       title: "Technical Expertise",
+      language: "Programming Languages",
       frontend: "Frontend",
       backend: "Backend",
       database: "Database",
@@ -134,6 +142,12 @@ export const translations = {
       exp1_p3_name: "โปรเจกต์ KhunaiStory (โปรเจกต์ส่วนตัว)",
       exp1_p3_desc:
         "พัฒนาแอปพลิเคชันเรียนภาษาอังกฤษ (app.khunaistory.com) ผ่านการอ่านเรื่องราวสนุกๆ มีฟีเจอร์ AI จำลองสถานการณ์ (Role-play) โต้ตอบกับตัวละคร ระบบอ่านเรื่องราวแบบมีเสียงบรรยาย และแฟลชการ์ดสำหรับฝึกฝนคำศัพท์ (Oxford 3000) เน้นการสร้างประสบการณ์ที่เสมือนจริงและนำเทคโนโลยีมาใช้กับการศึกษา",
+      exp1_p4_name: "Storage and Cookies Manager (Chrome Extension)",
+      exp1_p4_desc:
+        "พัฒนาและเผยแพร่ส่วนขยาย (Extension) Open-source บน Google Chrome (https://chromewebstore.google.com/detail/storage-and-cookies-manag/oohieppjjpdgidfhdlcjfpfmhkpflbcc) ซึ่งออกแบบมาสำหรับ Web Developers โดยเฉพาะ ปัจจุบันมีผู้ใช้งานมากกว่า 1,000+ คน ฟีเจอร์หลักประกอบด้วยการดู, แก้ไข, เพิ่ม, และลบข้อมูล Cookies, LocalStorage, และ SessionStorage ได้แบบเรียลไทม์ พัฒนาด้วย Svelte และ HTML/CSS โดยเน้นการออกแบบ UI ที่ใช้งานง่ายและสอดคล้องกับมาตรฐานความปลอดภัย Manifest V3 ของ Chrome",
+      exp1_p5_name: "PCW Cleaning Assessment (Web Application ฟรี)",
+      exp1_p5_desc:
+        "พัฒนา Web Application ให้ทางโรงเรียน PCW ใช้งานแบบไม่มีค่าใช้จ่าย (https://cleaning.pcw.ac.th/) เพื่อให้ระบบคณะกรรมการสภานักเรียนใช้บันทึกคะแนนและประเมินการทำความสะอาดห้องเรียนที่รับผิดชอบแบบรายวัน พร้อมระบบแสดงรายงาน (Reporting System) ที่ให้ครูประจำชั้น, นักเรียน, และบุคลากรต่างๆ สามารถเข้ามาตรวจสอบผลการประเมินได้อย่างโปร่งใสและสะดวก",
 
       exp2_company: "Hi-Q Food Products Co., Ltd.",
       exp2_period: "ต.ค. 2019 – พ.ค. 2022",
@@ -153,9 +167,9 @@ export const translations = {
 
       exp3_company: "Saraff Infotech Co., Ltd (ประจำไซต์ AIS)",
       exp3_period: "ก.ค. 2018 - ต.ค. 2019",
-      exp3_p1_name: "โปรเจกต์ AIS",
+      exp3_p1_name: "โปรเจกต์ AIS (Kiosk & E-Service)",
       exp3_p1_desc:
-        "พัฒนาเว็บแอปพลิเคชันสำหรับใช้งานบนตู้ Kiosk, พัฒนา API service",
+        "พัฒนาระบบ Web Application สำหรับให้บริการลูกค้าแบบ Self-service บนตู้ Kiosk ของ AIS (https://www.ais.th/) ที่ติดตั้งสาขาทั่วประเทศ รับผิดชอบหลักในส่วน Frontend โดยพัฒนาฟีเจอร์สำคัญ เช่น ระบบนำเสนอและสั่งซื้อเครื่องโทรศัพท์มือถือใหม่พร้อมแพ็กเกจ (New Device Purchase), ระบบย้ายค่ายเบอร์เดิม (Mobile Number Portability - MNP), และระบบจัดการข้อมูล/แพ็กเกจสำหรับลูกค้าระบบเติมเงิน (Prepaid) และรายเดือน (Postpaid) นอกจากนี้ยังพัฒนาบริการ API (API Service) เพื่อเชื่อมต่อระหว่างหน้าจอ Kiosk กับระบบ Backend หลักของทาง AIS เพื่อส่งมอบประสบการณ์ใช้งานที่รวดเร็วและไร้รอยต่อ",
 
       exp4_company: "Nextwaver.NET",
       exp4_period: "ม.ค. 2018 - เม.ย. 2018",
@@ -165,6 +179,7 @@ export const translations = {
     },
     skills: {
       title: "ความเชี่ยวชาญทางเทคนิค",
+      language: "ภาษาโปรแกรม (Languages)",
       frontend: "มิติผู้ใช้งาน (Frontend)",
       backend: "ระบบหลังบ้าน (Backend)",
       database: "ฐานข้อมูล",

@@ -44,27 +44,25 @@
     });
   };
 
-  const experiences = [
+  $: experiences = [
     {
-      company: "ODT",
-      period: "May 2022 - Present",
+      company: $t("experience.exp1_company"),
+      period: $t("experience.exp1_period"),
       projects: [
         {
-          name: "TTB Project, Retail Lending Team, Common Apply Team",
+          name: $t("experience.exp1_p1_name"),
           role: "Frontend",
-          description:
-            "Development Web Application (Loan, Credit card Feature) with React, Development Native Application (NTB Feature) with IOS Swift, Development Cross Platform (Customer360 feature) with Flutter",
+          description: $t("experience.exp1_p1_desc"),
           technologies: ["React", "Swift (IOS)", "Flutter"],
         },
         {
-          name: "a-chieve social enterprise",
+          name: $t("experience.exp1_p2_name"),
           role: "Full Stack",
-          description:
-            "Developing a Web Application to Support Career and Life Guidance for Thai Students, Developing a Tool and Report for Career Counselors to Assess Their Students, Developing a Tools and Report support Admin",
+          description: $t("experience.exp1_p2_desc"),
           technologies: [
             "Vue",
             "Nuxt",
-            "Strapi",
+            "Strapi (CMS)",
             "Go",
             "GitLab CI/CD",
             "Kubernetes",
@@ -74,23 +72,33 @@
           ],
         },
         {
-          name: "KhunaiStory",
+          name: $t("experience.exp1_p3_name"),
           role: "Full Stack",
-          description:
-            "Developed an English learning application through engaging stories with AI-powered role-playing, interactive story reading, and flashcards.",
+          description: $t("experience.exp1_p3_desc"),
           technologies: ["SvelteKit", "Supabase", "AI (LLM)", "Tailwind CSS"],
+        },
+        {
+          name: $t("experience.exp1_p4_name"),
+          role: "Frontend",
+          description: $t("experience.exp1_p4_desc"),
+          technologies: ["Svelte", "Manifest V3"],
+        },
+        {
+          name: $t("experience.exp1_p5_name"),
+          role: "Full Stack",
+          description: $t("experience.exp1_p5_desc"),
+          technologies: ["Strapi (CMS)", "Nuxt", "Vue", "Tailwind CSS"],
         },
       ],
     },
     {
-      company: "Hi-Q Food Products Co., Ltd.",
-      period: "Oct 2019 – May 2022",
+      company: $t("experience.exp2_company"),
+      period: $t("experience.exp2_period"),
       projects: [
         {
-          name: "Internal and Public Application",
+          name: $t("experience.exp2_p1_name"),
           role: "Senior Programmer & Technical Lead",
-          description:
-            "Team management with Agile and daily meetups with Scrum. Development of authorization systems using sessions, cookies, and JWT. Development of SSR applications using SvelteKit and database with PostgreSQL, Prisma ORM. Implementation of authorization systems using Session Cookie Authentication, JWT Authentication, and Keycloak. On-premises infrastructure setup network configuration. Use Proxmox to Manage Instant of VM. Project deployment management using Docker Nginx. Some Projects Deployment on Kubernetes. Build and deploy automation using Jenkins or GitLab CI. Reverse proxy implementation using Nginx Proxy Manager and Manage DNS with PowerDNS.",
+          description: $t("experience.exp2_p1_desc"),
           technologies: [
             "SvelteKit",
             "NestJS",
@@ -108,24 +116,23 @@
             "PowerDNS",
           ],
           keyProjects: [
-            "Felina Canino Application: Developed by Svelte Frontend Framework use NestJS to Develop Backend, integrating with Navision API and storage data with MongoDB and MS SQL.",
-            "Line Official Account (Point Reward System): Full-stack development using Svelte Implement with Line Liff Framework.",
-            "HR Management Platform: Built an Express backend with MongoDB via Strapi V2.",
-            "Mobile Survey Application: Created a Flutter-based solution with Firebase integration.",
-            "Jobber Application: Optimized backend with Fastify using dual database architecture.",
+            $t("experience.exp2_kp1"),
+            $t("experience.exp2_kp2"),
+            $t("experience.exp2_kp3"),
+            $t("experience.exp2_kp4"),
+            $t("experience.exp2_kp5"),
           ],
         },
       ],
     },
     {
-      company: "Saraff Infotech Co., Ltd (site AIS)",
-      period: "Jul 2018 - Oct 2019",
+      company: $t("experience.exp3_company"),
+      period: $t("experience.exp3_period"),
       projects: [
         {
-          name: "AIS Project",
+          name: $t("experience.exp3_p1_name"),
           role: "Frontend",
-          description:
-            "Develop web Application run on Kiosk, Develop API service",
+          description: $t("experience.exp3_p1_desc"),
           technologies: [
             "Angular 6",
             "Redux",
@@ -137,14 +144,13 @@
       ],
     },
     {
-      company: "Nextwaver.NET",
-      period: "Jan 2018 - Apr 2018",
+      company: $t("experience.exp4_company"),
+      period: $t("experience.exp4_period"),
       projects: [
         {
-          name: "AIS Project",
+          name: $t("experience.exp4_p1_name"),
           role: "Frontend",
-          description:
-            "Develop web application PHR Profile, Develop Text recognition for Save profile in the book Profile, Develop Deep learning for Training software, Manage Data using .Net Core",
+          description: $t("experience.exp4_p1_desc"),
           technologies: ["PHR", "Python", "C# .Net Core"],
         },
       ],
@@ -152,32 +158,45 @@
   ];
 
   const skills = {
+    language: [
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "Go",
+      "Java",
+      "C#",
+      "Swift",
+      "Kotlin",
+      "Dart",
+    ],
     frontend: [
+      "HTML/CSS",
       "Vue",
       "NuxtJs",
       "Angular",
       "React",
       "Svelte",
       "Quasar Framework",
-      "Flutter",
     ],
     backend: [
+      "Node.js",
       "Express",
       "Fastify",
       "NestJS",
       "Strapi",
-      "Go (Go-gin)",
-      "Java",
-      "C#",
+      "Go-gin",
+      ".NET Core",
       "SvelteKit",
     ],
-    database: ["MongoDB", "Firebase", "PostgreSQL", "SQLite", "MySQL"],
-    mobile: [
-      "Flutter",
-      "IOS (Swift)",
-      "Android (Java, Kotlin)",
-      "React Native",
+    database: [
+      "MongoDB",
+      "Firebase",
+      "PostgreSQL",
+      "SQLite",
+      "MySQL",
+      "MS SQL",
     ],
+    mobile: ["Flutter", "iOS Native", "Android Native", "React Native"],
     devops: [
       "Docker",
       "Kubernetes",
@@ -189,6 +208,7 @@
       "Kong",
       "Cloudflare",
       "PowerDNS",
+      "Proxmox",
     ],
     other: [
       "Wails",
@@ -215,6 +235,9 @@
     address: "Bueng Kan, Thailand",
     phone: "+6692-947-9535",
     email: "nakarin.weerasak@gmail.com",
+    github: "github.com/zax-th",
+    linkedin: "linkedin.com/in/9zax",
+    medium: "medium.com/@ctzcz",
   };
 </script>
 
@@ -229,6 +252,7 @@
 </svelte:head>
 
 <main
+  id="cv-content"
   class="min-h-screen bg-[#000000] text-[#A1A1AA] font-['Inter'] selection:bg-zinc-800/50 selection:text-white overflow-x-hidden relative"
 >
   <!-- Minimalist Background Grid -->
@@ -245,6 +269,7 @@
   <div class="relative z-10">
     <!-- Ultra-clean Header -->
     <header
+      id="main-nav"
       class="fixed top-0 left-0 right-0 z-50 bg-[#000000]/80 backdrop-blur-md transition-all {scrollY >
       20
         ? 'border-b border-zinc-800/50 py-4'
@@ -257,42 +282,81 @@
         >
           Nakarin.
         </a>
-        <nav class="hidden md:flex gap-8 items-center">
-          <a
-            href="#about"
-            class="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
-            >{$t("nav.about")}</a
-          >
-          <a
-            href="#experience"
-            class="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
-            >{$t("nav.experience")}</a
-          >
-          <a
-            href="#skills"
-            class="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
-            >{$t("nav.skills")}</a
-          >
-          <a
-            href="#contact"
-            class="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
-            >{$t("nav.contact")}</a
-          >
+        <div class="flex items-center gap-6">
+          <nav class="hidden md:flex items-center gap-6">
+            <a
+              href="#about"
+              class="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+              >{$t("nav.about")}</a
+            >
+            <a
+              href="#experience"
+              class="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+              >{$t("nav.experience")}</a
+            >
+            <a
+              href="#skills"
+              class="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+              >{$t("nav.skills")}</a
+            >
+            <a
+              href="#contact"
+              class="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+              >{$t("nav.contact")}</a
+            >
+          </nav>
 
-          <!-- Language Toggle Button -->
-          <button
-            on:click={toggleLocale}
-            class="ml-4 px-3 py-1.5 rounded-full border border-zinc-800 bg-[#0A101D] text-xs font-semibold text-zinc-300 hover:text-white hover:border-zinc-600 transition-all flex items-center gap-2 group"
+          <div
+            class="flex items-center gap-3 border-l border-zinc-800/50 pl-6 ml-2"
           >
-            <span class={$locale === "en" ? "text-white" : "text-zinc-500"}
-              >EN</span
+            <!-- PDF Download Link (Passing Locale) -->
+            <a
+              href="{base}/pdf?lang={$locale}"
+              target="_blank"
+              class="group flex items-center justify-center w-14 h-9 rounded-full bg-zinc-900/50 border border-zinc-800/50 hover:border-zinc-500/30 hover:bg-zinc-800/50 transition-all duration-300"
+              aria-label="Download CV as PDF"
             >
-            <span class="text-zinc-700">/</span>
-            <span class={$locale === "th" ? "text-white" : "text-zinc-500"}
-              >TH</span
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="text-zinc-400 group-hover:text-white transition-colors"
+                ><path d="M6 9V2h12v7"></path><path
+                  d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"
+                ></path><rect x="6" y="14" width="12" height="8"></rect></svg
+              >
+            </a>
+
+            <!-- Language Toggle Button -->
+            <button
+              on:click={toggleLocale}
+              class="group relative flex items-center justify-center w-14 h-9 rounded-full bg-zinc-900/50 border border-zinc-800/50 hover:border-zinc-500/30 hover:bg-zinc-800/50 transition-all duration-300 overflow-hidden"
+              aria-label="Toggle language"
             >
-          </button>
-        </nav>
+              <div
+                class="absolute inset-x-0 top-0 h-full flex flex-col transition-transform duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] will-change-transform"
+                style="transform: translateY({$locale === 'en'
+                  ? '0'
+                  : '-100%'})"
+              >
+                <span
+                  class="h-full w-full shrink-0 flex items-center justify-center text-sm font-semibold tracking-wide text-zinc-300 group-hover:text-white transition-colors"
+                  >EN</span
+                >
+                <span
+                  class="h-full w-full shrink-0 flex items-center justify-center text-sm font-semibold tracking-wide text-zinc-300 group-hover:text-white transition-colors"
+                  >TH</span
+                >
+              </div>
+            </button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -455,7 +519,7 @@
           >
             <span
               class="block text-4xl font-['Outfit'] font-extrabold text-white mb-1"
-              >8+</span
+              >{new Date().getFullYear() - 2018}+</span
             >
             <span
               class="text-zinc-500 font-medium text-sm tracking-wide uppercase"
@@ -655,10 +719,12 @@
           ></div>
         </h2>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-24">
+        <div
+          class="flex flex-wrap justify-center gap-4 mb-24 max-w-5xl mx-auto"
+        >
           <a
             href="mailto:{contact.email}"
-            class="bg-zinc-900/30 backdrop-blur-xl rounded-4xl p-8 border border-zinc-800/80 flex flex-col items-center text-center hover:bg-zinc-800/50 hover:border-slate-500/30 hover:-translate-y-2 transition-all group no-underline"
+            class="flex-[1_1_250px] max-w-[320px] bg-zinc-900/30 backdrop-blur-xl rounded-4xl p-8 border border-zinc-800/80 flex flex-col items-center text-center hover:bg-zinc-800/50 hover:border-slate-500/30 hover:-translate-y-2 transition-all group no-underline"
           >
             <div
               class="w-14 h-14 rounded-full bg-slate-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform"
@@ -686,7 +752,7 @@
           </a>
           <a
             href="tel:{contact.phone}"
-            class="bg-zinc-900/30 backdrop-blur-xl rounded-4xl p-8 border border-zinc-800/80 flex flex-col items-center text-center hover:bg-zinc-800/50 hover:border-slate-500/30 hover:-translate-y-2 transition-all group no-underline"
+            class="flex-[1_1_250px] max-w-[320px] bg-zinc-900/30 backdrop-blur-xl rounded-4xl p-8 border border-zinc-800/80 flex flex-col items-center text-center hover:bg-zinc-800/50 hover:border-slate-500/30 hover:-translate-y-2 transition-all group no-underline"
           >
             <div
               class="w-14 h-14 rounded-full bg-slate-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform"
@@ -711,7 +777,7 @@
             <span class="text-white font-semibold">{contact.phone}</span>
           </a>
           <div
-            class="bg-zinc-900/30 backdrop-blur-xl rounded-4xl p-8 border border-zinc-800/80 flex flex-col items-center text-center hover:bg-zinc-800/50 transition-all group"
+            class="flex-[1_1_250px] max-w-[320px] bg-zinc-900/30 backdrop-blur-xl rounded-4xl p-8 border border-zinc-800/80 flex flex-col items-center text-center hover:bg-zinc-800/50 transition-all group"
           >
             <div
               class="w-14 h-14 rounded-full bg-slate-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform"
@@ -743,29 +809,91 @@
               >{$t("contact.address")}</span
             >
           </div>
-          <div
-            class="bg-zinc-900/30 backdrop-blur-xl rounded-4xl p-8 border border-zinc-800/80 flex flex-col items-center text-center hover:bg-zinc-800/50 transition-all group"
+          <a
+            href="https://{contact.linkedin}"
+            target="_blank"
+            class="flex-[1_1_250px] max-w-[320px] bg-zinc-900/30 backdrop-blur-xl rounded-4xl p-8 border border-zinc-800/80 flex flex-col items-center text-center hover:bg-zinc-800/50 hover:border-slate-500/30 hover:-translate-y-2 transition-all group no-underline"
           >
             <div
               class="w-14 h-14 rounded-full bg-slate-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform"
             >
               <svg
                 class="w-6 h-6 text-slate-300 group-hover:text-white transition-colors"
-                fill="none"
+                fill="currentColor"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="1.5"
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
                 />
               </svg>
             </div>
-            <span class="text-slate-400 text-sm mb-2 font-medium">Status</span>
-            <span class="text-white font-semibold text-sm">Available</span>
-          </div>
+            <span class="text-slate-400 text-sm mb-2 font-medium">LinkedIn</span
+            >
+            <span class="text-white font-semibold text-sm">/in/9zax</span>
+          </a>
+          <a
+            href="https://{contact.gitlab}"
+            target="_blank"
+            class="flex-[1_1_250px] max-w-[320px] bg-zinc-900/30 backdrop-blur-xl rounded-4xl p-8 border border-zinc-800/80 flex flex-col items-center text-center hover:bg-zinc-800/50 hover:border-slate-500/30 hover:-translate-y-2 transition-all group no-underline"
+          >
+            <div
+              class="w-14 h-14 rounded-full bg-slate-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform"
+            >
+              <svg
+                class="w-6 h-6 text-slate-300 group-hover:text-white transition-colors"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 01-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 015.48 2h.022a.42.42 0 01.4.26l2.44 7.51h7.33l2.44-7.51A.42.42 0 0118.5 2h.022a.42.42 0 01.4.26l2.44 7.51 1.22 3.78a.84.84 0 01-.3.94Z"
+                />
+              </svg>
+            </div>
+            <span class="text-slate-400 text-sm mb-2 font-medium">GitLab</span>
+            <span class="text-white font-semibold text-sm">9zax</span>
+          </a>
+          <a
+            href="https://{contact.medium}"
+            target="_blank"
+            class="flex-[1_1_250px] max-w-[320px] bg-zinc-900/30 backdrop-blur-xl rounded-4xl p-8 border border-zinc-800/80 flex flex-col items-center text-center hover:bg-zinc-800/50 hover:border-slate-500/30 hover:-translate-y-2 transition-all group no-underline"
+          >
+            <div
+              class="w-14 h-14 rounded-full bg-slate-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform"
+            >
+              <svg
+                class="w-6 h-6 text-slate-300 group-hover:text-white transition-colors"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42c1.87 0 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"
+                />
+              </svg>
+            </div>
+            <span class="text-slate-400 text-sm mb-2 font-medium">Medium</span>
+            <span class="text-white font-semibold text-sm">@ctzcz</span>
+          </a>
+          <a
+            href="https://{contact.github}"
+            target="_blank"
+            class="flex-[1_1_250px] max-w-[320px] bg-zinc-900/30 backdrop-blur-xl rounded-4xl p-8 border border-zinc-800/80 flex flex-col items-center text-center hover:bg-zinc-800/50 hover:border-slate-500/30 hover:-translate-y-2 transition-all group no-underline"
+          >
+            <div
+              class="w-14 h-14 rounded-full bg-slate-500/10 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform"
+            >
+              <svg
+                class="w-6 h-6 text-slate-300 group-hover:text-white transition-colors"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.379.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                />
+              </svg>
+            </div>
+            <span class="text-slate-400 text-sm mb-2 font-medium">GitHub</span>
+            <span class="text-white font-semibold text-sm">zax-th</span>
+          </a>
         </div>
 
         <!-- Footer -->

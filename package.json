@@ -22,6 +22,8 @@
     "vite": "^5.0.0"
   },
   "dependencies": {
-    "@studio-freight/lenis": "^1.0.42"
+    "@studio-freight/lenis": "^1.0.42",
+    "@zumer/snapdom": "^2.0.2",
+    "jspdf": "^4.2.0"
   }
 }
