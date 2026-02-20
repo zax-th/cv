@@ -195,7 +195,7 @@
     // Wait a brief moment for DOM reactivity to settle the translations, then automatically trigger print dialog.
     setTimeout(() => {
       window.print();
-    }, 500);
+    }, 2000);
   });
 </script>
 
@@ -218,11 +218,11 @@
       class="border-b-2 border-[#1e3a8a] pb-6 mb-8 flex justify-between items-end"
     >
       <div>
-        <h2
-          class="text-4xl font-['Outfit'] font-bold text-zinc-900 leading-tight mb-2 tracking-tight"
+        <h4
+          class="text-3xl font-['Outfit'] font-bold text-zinc-900 leading-tight mb-2 tracking-tight"
         >
           Nakarin Weerasak
-        </h2>
+        </h4>
         <div class="text-xl text-[#1e3a8a] font-medium tracking-wide">
           {t.footer.role}
         </div>
