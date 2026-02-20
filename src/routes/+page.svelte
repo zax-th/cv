@@ -192,6 +192,7 @@
       "MongoDB",
       "Firebase",
       "PostgreSQL",
+      "Supabase",
       "SQLite",
       "MySQL",
       "MS SQL",
@@ -903,7 +904,6 @@
           <div
             class="flex items-center gap-2 opacity-50 hover:opacity-100 transition-opacity"
           >
-            <Logo size={24} />
             <span class="text-sm font-semibold text-white tracking-widest"
               >NAKARIN W.</span
             >
